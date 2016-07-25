@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Credit Card Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="creditcard.css">
+</head>
+<body>
+	<h1>Credit Card Form</h1>
+	<form action="creditcard.html" method="post">
+		<fieldset>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laudantium harum, a porro recusandae cupiditate cumque omnis alias error. Soluta rem eveniet quisquam quis nemo incidunt. Ab, id non! Soluta.</p>
+			<div class="name">
+				<label for="name_on_card">Name On Card</label><input type="text" id="name_on_card" placeholder="John Pineapple" required>
+			</div>
+			<div class="number">
+				<label for="card_number">Credit / Debit Card Number</label><input type="text" id="card_number" placeholder="4012-8888-8888-1881" maxlength="19" required>
+			</div>
+			<div class="month">
+				<label for="exp_month">Exp Month</label>
+				<select name="month" id="exp_month">
+					<option selected="true" disabled="true" value="" hidden required>6 - Jun</option>
+				    <option value="01">1 - Jan</option>
+				    <option value="02">2 - Feb</option>
+				    <option value="03">3 - Mar</option>
+				    <option value="04">4 - Apr</option>
+				    <option value="05">5 - May</option>
+				    <option value="06">6 - Jun</option>
+				    <option value="07">7 - Jul</option>
+				    <option value="08">8 - Aug</option>
+				    <option value="09">9 - Sep</option>
+				    <option value="10">10 - Oct</option>
+				    <option value="11">11 - Nov</option>
+				    <option value="12">12 - Dec</option>
+				</select>
+			</div>
+			<div class="year">
+				<label for="exp_year">Exp Year</label>
+				<select name="year" id="exp_year">
+				<option selected="true" disabled="true" value="" hidden required>2027</option>
+				    <option value="16">2016</option>
+				    <option value="17">2017</option>
+				    <option value="18">2018</option>
+				    <option value="19">2019</option>
+				    <option value="20">2020</option>
+				    <option value="21">2021</option>
+				    <option value="22">2022</option>
+				    <option value="23">2023</option>
+				    <option value="24">2024</option>
+				    <option value="25">2025</option>
+				    <option value="26">2026</option>
+				    <option value="27">2027</option>
+				    <option value="28">2028</option>
+				    <option value="29">2029</option>
+				    <option value="30">2030</option>
+				    <option value="31">2031</option>
+				</select>
+			</div>
+			<div class="csv">
+				<label for="csv">CSV</label><input type="text" id="csv" placeholder="123" maxlength="3" required>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	font-size: 1rem;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: 'Lato', sans-serif;
+	color: #E6EEEE;
+	background-image: linear-gradient(
+		to left top,
+		#CB4CF0 -25%,
+		#34ADFF,
+		#4BFF74 125%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 100%;
+}
+
+h1 {
+	text-align: center;
+}
+
+fieldset {
+	border: 5px solid rgba(0,0,0,0.2);
+	padding: 30px 10px 30px;
+	margin: 0 auto 50px;
+	width: 600px;
+}
+
+p {
+	width: 85%;
+	margin: 0 auto 30px;
+}
+
+.name,
+.number,
+.month,
+.year,
+.csv {
+	background-color: rgba(0,0,0,0.2);
+	padding: 15px;
+}
+
+.name,
+.number {
+	margin: 10px auto;
+	width: 70%;
+}
+
+.month,
+.year,
+.csv {
+	display: inline-block;
+	padding: 15px;
+}
+.month,
+.year {
+	width: 124px;
+}
+
+.month {
+	margin-left: 85px;
+	margin-right: 10px;
+}
+.year {
+	margin-right: 11px;
+}
+
+.csv {
+	padding: 15px;
+	width: 124px;
+}
+
+label {
+	display: block;
+	font-size: .9rem;
+	margin-bottom: 5px;
+}
+
+label[for="exp_month"]:after,
+label[for="exp_year"]:after,
+label[for="card_number"]:after,
+label[for="name_on_card"]:after,
+label[for="csv"]:after {
+	font-family: 'FontAwesome';
+	position: relative;
+	color: #4E5252;
+}
+
+label[for="name_on_card"]:after {
+	content: '\f007';
+	right: -250px;
+	top: 33px;
+}
+
+label[for="card_number"]:after {
+	content: '\f283';
+	right: -165px;
+	top: 33px;
+}
+
+label[for="exp_month"]:after,
+label[for="exp_year"]:after {
+	content: '\f07d';
+	right: -10px;
+	top: 33px;
+}
+label[for="exp_year"]:after {
+	right: -25px;
+}
+label[for="csv"]:after {
+	content: '\f023';
+	right: -45px;
+	top: 33px;
+}
+
+input,
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	border: none; /*3px solid rgba(255,255,255,0.0);*/
+	outline: none;
+	padding: 10px 10px;
+	font-size: 1rem;
+	width: 100%;
+	color: #4E5252;
+	transition: background-color .7s ease;
+}
+
+input:focus,
+select:focus {
+	background-color: #FFFC9D;
+}
+select#exp_month:invalid {
+	color: #f00;
+}
