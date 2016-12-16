@@ -143,9 +143,6 @@ input:focus,
 select:focus {
 	background-color: #FFFC9D;
 }
-select#exp_month:invalid {
-	color: #f00;
-}
 
 .navigation {
   margin-top: 2em;
