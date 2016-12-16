@@ -43,13 +43,15 @@ p {
 .number,
 .month,
 .year,
-.csv {
+.csv,
+.submit {
 	background-color: rgba(0,0,0,0.2);
 	padding: 15px;
 }
 
 .name,
-.number {
+.number,
+.submit {
 	margin: 10px auto;
 	width: 70%;
 }
@@ -122,7 +124,8 @@ label[for="csv"]:after {
 }
 
 input,
-select {
+select,
+button {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	border-radius: 0;
@@ -132,7 +135,8 @@ select {
 	font-size: 1rem;
 	width: 100%;
 	color: #4E5252;
-	transition: background-color .7s ease;
+	transition: background-color .7s ease,
+							color .7s ease;
 }
 
 input:focus,
@@ -160,9 +164,21 @@ select#exp_month:invalid {
 
 .navigation a:hover,
 .navigation a:focus {
-  background: 
+  background:
     linear-gradient(
-      to bottom right, 
+      to bottom right,
       rgba(139,125,239, 0.65), rgba(59,153,239, .65)
     );
+}
+
+button {
+	display: block;
+	margin: auto;
+	background: white;
+}
+
+button:hover,
+button:focus {
+	background: #37A7F8;
+	color: white;
 }

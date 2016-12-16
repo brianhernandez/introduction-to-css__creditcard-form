@@ -10,7 +10,7 @@
 </head>
 <body>
 	<h1>Credit Card Form</h1>
-	<form action="creditcard.html" method="post">
+	<form id="ccform" action="creditcard.html" method="post">
 		<fieldset>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum laudantium harum, a porro recusandae cupiditate cumque omnis alias error. Soluta rem eveniet quisquam quis nemo incidunt. Ab, id non! Soluta.</p>
 			<div class="name">
@@ -41,7 +41,6 @@
 				<label for="exp_year">Exp Year</label>
 				<select name="year" id="exp_year">
 				<option selected="true" disabled="true" value="" hidden required>2027</option>
-				    <option value="16">2016</option>
 				    <option value="17">2017</option>
 				    <option value="18">2018</option>
 				    <option value="19">2019</option>
@@ -60,13 +59,16 @@
 				</select>
 			</div>
 			<div class="csv">
-				<label for="csv">CSV</label><input type="text" id="csv" placeholder="123" maxlength="3" required>
+				<label for="csv">CSV</label><input type="text" id="csv" placeholder="123" maxlength="4" required>
 			</div>
+			<div class="submit"><button type="submit">Submit</button></div>
 		</fieldset>
 	</form>
 	<ul class="navigation">
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/forms.html">Form Projects Homepage</a></li>
 		<li><a href="https://brianhernandez.github.io/introduction-to-css__multi-page-web-site/">Projects Homepage</a></li>
 	</ul>
+	<script type="text/javascript" src="validator.js"></script>
+  <script type="text/javascript" src="creditcard-validate.js"></script>
 </body>
 </html>
