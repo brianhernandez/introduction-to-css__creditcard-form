@@ -143,6 +143,10 @@ input:focus,
 select:focus {
 	background-color: #FFFC9D;
 }
+select:invalid,
+input:invalid {
+	color: #f00;
+}
 
 .navigation {
   margin-top: 2em;
